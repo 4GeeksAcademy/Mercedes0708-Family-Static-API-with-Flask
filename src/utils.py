@@ -32,7 +32,7 @@ def generate_sitemap(app):
             url = url_for(rule.endpoint, **(rule.defaults or {}))
             links.append(url)
     links_html = "".join(["<li><a href='" + y + "'>" + y + "</a></li>" for y in links])
-    return """
+    return """ 
         <div style="text-align: center;">
             <img src='https://github.com/breatheco-de/exercise-family-static-api/blob/master/rigo-baby.jpeg?raw=true' />
             <h1>Hello Rigo!!</h1>
