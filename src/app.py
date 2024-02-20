@@ -27,14 +27,14 @@ def sitemap():
     return generate_sitemap(app)
 
 
-"""
-CRUD
+
+""" CRUD
 '/members' GET - devuelve TODOS los integrantes
 '/members' POST - Crea UNO integrantes
 '/members/<int:id_member>' GET - devuelve UNO integrante
 '/members/<int:id_member>' PUT - modifica UNO integrante
-'/members/<int:id_member>' DELETE - borra UNO integrante
-"""
+'/members/<int:id_member>' DELETE - borra UNO integrante """
+
 
 
 @app.route('/members', methods=['GET', 'POST'])
